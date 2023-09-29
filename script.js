@@ -88,8 +88,12 @@ let chapters = {
 function goToChapter(cle){
 let chapitre = chapters[cle];
 console.log (chapitre.titre)
+// affiche le text
+// boucle a travers les boutons
+// dans la boucle, affiche bouton.destination.
+
 
 }
 
-goToChapter('verdicte');
+goToChapter('debut');
 

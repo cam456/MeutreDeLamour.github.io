@@ -104,6 +104,19 @@ function goToChapter(cle){
 let chapitre = chapters[cle];
 console.log (chapitre.titre)
 console.log(chapitre.text)
+
+var counter = 1
+var button = document.getElementById("button" + counter + "debut");
+
+while (button){
+
+    button.addEventListener("click", function(){
+
+
+    });
+    button = document.getElementById("button" + (++counter) + "debut");
+
+}
 // affiche le text
 // boucle a travers les boutons
 // dans la boucle, affiche bouton.destination.

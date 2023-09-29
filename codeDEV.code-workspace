@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../OLD/2023/programation"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "codeDEV"
+	}
+}

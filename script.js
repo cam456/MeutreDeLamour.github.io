@@ -1,7 +1,7 @@
 let chapters = {
     debut: {
         titre : "la mort" ,
-        text : "contenue premier chapitre",
+        text : " Vous Vous étes a votre job au IGA Il y a beaucoup de client mais vous penser prendre votre 15min de pause en avance ",
         image : "/image/IGA.jpg",
         boutons : [ 
         { titre : "prendre votre pause",  destination: "police" },
@@ -11,8 +11,8 @@ let chapters = {
     },
     police: {
         titre : "la police" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "la police vien a votre travail et vous découvrer que votre amoureux/amoureuse et mort,La police vous demande de venir avec eux ",
+        image : "",
         boutons : [
             { titre : "aller avec la police",  destination: "stationPolice" },
             { titre : "ne pas aller avec la police",  destination: "arrestation" }
@@ -21,28 +21,28 @@ let chapters = {
     },
     stationPolice: {
         titre : "embarquement" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "La police vous ramenne dans la voiture pour ensuite vous ramenner a la station Rendu a la station la police commence a vous questionner et vous demande ou vous étier le 21 septembre",
+        image : "",
         boutons : [
-            { titre : "mentir a la police",  destination: "arrestation" },
+            { titre : " dire ou vous étier le 21 septembre",  destination: "arrestation" },
             { titre : "ne pas ment",  destination: "questionnement" }
         ]  
 
     },
     Questionnement: {
         titre : "Questionnement" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "La police vous demande quand étais la derniere fois que vous avez vue vote amoureux/amoureuse",
+        image : "",
         boutons : [
-            { titre : "dire ou vous étier le 21 septembre",  destination: "arrestation" },
-            { titre : "ne pas ment",  destination: "VraiAmour" }
+            { titre : "dire que vous l'avez vue le matin du 21 septembre",  destination: "arrestation" },
+            { titre : "dire que vous étier au travail",  destination: "VraiAmour" }
         ]  
 
     },
     VraiAmour: {
         titre : "Le vrai amour" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "La police vous demande si vous aimer vraiment votre amoureuse/amoureux",
+        image : "",
         boutons : [
             { titre : "ne pas crier et demander un advocat ",  destination: "avocat" },
             { titre : "crier que vous l'aimer et que vous voulez un advocat",  destination: "avocat" }
@@ -51,8 +51,8 @@ let chapters = {
     },
     avocat: {
         titre : "Le sauveur" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "Apres que l'avocat soir venu vous diser a votre avocat que n'avez pas tuer, votre avocat vous demande si vous avez crier au policer",
+        image : "",
         boutons : [
             { titre : "vous avez crier au policier",  destination: "innocence" },
             { titre : "vous avez pas crier au policier",  destination: "innocence" }
@@ -61,8 +61,8 @@ let chapters = {
     },
     innocence: {
         titre : "notre innocence" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "Votre avocat vous dit qu'elle va faire le plus posible pour vous prouver innocent. Durant le procès je juge vous demande si vous étes innocent ou coupable ",
+        image : "",
         boutons : [
             { titre : "innocent",  destination: "arrestation" },
             { titre : "coupable",  destination: "VraiAmour" }
@@ -71,7 +71,7 @@ let chapters = {
     },
     juge: {
         titre : "Juge" ,
-        text : "contenue premier chapitre",
+        text : "Après votre advocat est capable de presque vous prouvez innocent",
         image : "/image/IGA.jpg",
         boutons : [
             { titre : "suivent",  destination: "verdicte" },
@@ -80,8 +80,8 @@ let chapters = {
     },
     verdicte: {
         titre : "VERDICTE" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "Lorsque la police a essayer de vous parler vous les avais accompagner sans resistance, cela prouve que vous n'Avier rien a cacher et que vous étes innocent ",
+        image : "",
         boutons : [
             { titre : "recommencer",  destination: " debut" },
         ]  
@@ -89,8 +89,8 @@ let chapters = {
     },
     mauvaisVerdicte: {
         titre : "VERDICTE" ,
-        text : "contenue premier chapitre",
-        image : "/image/IGA.jpg",
+        text : "Lorsque la police a essayer de vous parler vous ne les avais pas accompagner car vous étes aller en pause.Cela prouve au juge que vous caher quelque chose et que vous avez tuer votre amoureux/amoureuse ",
+        image : "",
         boutons : [
             { titre : "recommencer",  destination: " debut" }
         ]  

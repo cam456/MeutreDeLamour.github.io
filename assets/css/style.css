@@ -6,10 +6,10 @@
 
 body {
     background-color: #956B52;
-    background-image: url(./image/papier.png);
-    background-size: 1900px 1000px;
+    background-image: url(../image/papier.png);
+    background-size: cover;
     background-position: 90%;  
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .entrer{
@@ -19,7 +19,6 @@ body {
     font-size: 20px;
     background-color: #773F24;
     width: 200px;
-    height: 50px;
     border-radius: 4px;
     border: 2px #370B13;
     border-style: solid;
@@ -29,11 +28,8 @@ body {
     margin-left: 480px;
 }
 
-
-
 .jeu{
     position: relative;
-    height: 800px;
     width: 1200px;
     background-color: #DEC7BA;
     overflow: hidden;
@@ -45,10 +41,6 @@ body {
     border-style: solid;
 
 }
-
-
-
-
 
 .explication{
     position: relative;
@@ -78,8 +70,6 @@ body {
     text-align: center
     
 }
-
-
 
 .image{
     position: relative;

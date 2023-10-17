@@ -39,15 +39,16 @@ body {
 }
 
 .explication{
+    color: #e9ded8;
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     width: 200px;
     margin-top: 5px;
     text-align: center;
-    background-color:#773F24 ;
+    background-color:#77402491 ;
     left: 50px;
-
+    width: 500px;
     
 }
 
@@ -70,7 +71,7 @@ body {
 
 .image{
     position: relative;
-    top: -300px;
+    top: -100px;
     left: 750px ;
     z-index: inherit;
     

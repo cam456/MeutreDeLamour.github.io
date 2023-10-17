@@ -22,15 +22,12 @@ body {
     border-radius: 4px;
     border: 2px #370B13;
     border-style: solid;
-    flex-direction: center;
-    align-items: center;
-    margin-top: 150px;
-    margin-left: 480px;
+    top: -550px;
 }
 
 .jeu{
     position: relative;
-    width: 1200px;
+    width: 1500px;
     background-color: #DEC7BA;
     overflow: hidden;
     margin-left:auto ;
@@ -39,18 +36,18 @@ body {
     border-radius: 10px;
     border: 2px #370B13;
     border-style: solid;
-
 }
 
 .explication{
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    width: 800px;
-    margin-left:auto;
-    margin-right: auto;
+    font-size: 30px;
+    width: 200px;
     margin-top: 5px;
+    text-align: center;
+    background-color:#773F24 ;
+    left: 50px;
+
     
 }
 
@@ -58,7 +55,7 @@ body {
     position: relative;
     margin-top: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center
     
 }
@@ -66,19 +63,17 @@ body {
 .chapitre{
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center
     
 }
+
 .image{
     position: relative;
-    size: 20pc;
-    overflow: hidden;
-    margin-left:auto ;
-    margin-right: auto;
-    top: -765px;
-    text-align: center;
+    top: -300px;
+    left: 750px ;
     z-index: inherit;
+    
 
 }
 

@@ -26,6 +26,7 @@ body {
 
 .jeu{
     position: relative;
+    top: 20px;
     width: 1500px;
     height: 900px;
     background-color: #DEC7BA;

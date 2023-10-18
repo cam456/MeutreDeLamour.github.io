@@ -2,7 +2,7 @@ let chapters = {
     debut: {
         titre: "la mort",
         text: " Vous Vous étes a votre job au IGA Il y a beaucoup de client mais vous penser prendre votre 15min de pause en avance ",
-        image: "/image/IGA.jpg",
+        image: "./assets/image/IGA.jpg",
         boutons: [{
                 titre: "prendre votre pause",
                 destination: "police"
@@ -17,7 +17,7 @@ let chapters = {
     police: {
         titre: "la police",
         text: "la police vien a votre travail et vous découvrer que votre amoureux/amoureuse et mort,La police vous demande de venir avec eux ",
-        image: "",
+        image: "./assets/image/policier.jpg",
         boutons: [{
                 titre: "aller avec la police",
                 destination: "stationPolice"
@@ -32,7 +32,7 @@ let chapters = {
     stationPolice: {
         titre: "embarquement",
         text: "La police vous ramenne dans la voiture pour ensuite vous ramenner a la station Rendu a la station la police commence a vous questionner et vous demande ou vous étier le 21 septembre",
-        image: "",
+        image: "./assets/image/stationPolice.jpg",
         boutons: [{
                 titre: " dire ou vous étier le 21 septembre",
                 destination: "arrestation"
@@ -47,7 +47,7 @@ let chapters = {
     Questionnement: {
         titre: "Questionnement",
         text: "La police vous demande quand étais la derniere fois que vous avez vue vote amoureux/amoureuse",
-        image: "",
+        image: "./assets/image/interogation.jpg",
         boutons: [{
                 titre: "dire que vous l'avez vue le matin du 21 septembre",
                 destination: "arrestation"
@@ -62,7 +62,7 @@ let chapters = {
     VraiAmour: {
         titre: "Le vrai amour",
         text: "La police vous demande si vous aimer vraiment votre amoureuse/amoureux",
-        image: "",
+        image: "./assets/image/vraiAmour.jpg",
         boutons: [{
                 titre: "ne pas crier et demander un advocat ",
                 destination: "avocat"
@@ -77,7 +77,7 @@ let chapters = {
     avocat: {
         titre: "Le sauveur",
         text: "Apres que l'avocat soir venu vous diser a votre avocat que n'avez pas tuer, votre avocat vous demande si vous avez crier au policer",
-        image: "",
+        image: "./assets/image/avocatjpg",
         boutons: [{
                 titre: "vous avez crier au policier",
                 destination: "innocence"
@@ -92,7 +92,7 @@ let chapters = {
     innocence: {
         titre: "notre innocence",
         text: "Votre avocat vous dit qu'elle va faire le plus posible pour vous prouver innocent. Durant le procès je juge vous demande si vous étes innocent ou coupable ",
-        image: "",
+        image: "./assets/image/innocencejpg",
         boutons: [{
                 titre: "innocent",
                 destination: "arrestation"
@@ -107,7 +107,7 @@ let chapters = {
     juge: {
         titre: "Juge",
         text: "Après votre advocat est capable de presque vous prouvez innocent",
-        image: "/image/IGA.jpg",
+        image: "./assets/image/juge.jpg",
         boutons: [{
             titre: "suivent",
             destination: "verdicte"
@@ -117,7 +117,7 @@ let chapters = {
     verdicte: {
         titre: "VERDICTE",
         text: "Lorsque la police a essayer de vous parler vous les avais accompagner sans resistance, cela prouve que vous n'Avier rien a cacher et que vous étes innocent ",
-        image: "./assets/image/IGA.jpg",
+        image: "./assets/image/verdicte.jpg",
         boutons: [
             {
             titre: "recommencer",
@@ -129,7 +129,7 @@ let chapters = {
     mauvaisVerdicte: {
         titre: "VERDICTE",
         text: "Lorsque la police a essayer de vous parler vous ne les avais pas accompagner car vous étes aller en pause.Cela prouve au juge que vous caher quelque chose et que vous avez tuer votre amoureux/amoureuse ",
-        image: "./assets/image/IGA.jpg",
+        image: "./assets/image/mauvais_verdicte.jpg",
         boutons: [{
             titre: "recommencer",
             destination: " debut"

@@ -24,6 +24,18 @@ body {
     border-style: solid;
 }
 
+.suite{
+    position: static;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ece1db;
+    font-size: 20px;
+    background-color: #773F24;
+    width: 200px;
+    border-radius: 4px;
+    border: 2px #370B13;
+    border-style: solid;
+}
+
 .jeu{
     position: relative;
     top: 20px;
@@ -52,7 +64,6 @@ body {
     left: 50px;
     width: 500px;
     border-radius: 10px;
-    
 }
 
 .titre{
@@ -74,11 +85,9 @@ body {
 
 .image{
     position: relative;
-    top: -500px;
+    top: -510px;
     left: 750px ;
     z-index: inherit;
-    
-
 }
 
     

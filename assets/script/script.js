@@ -140,7 +140,7 @@ let chapters = {
     arrestation1: {
         titre: "La prison",
         text: "Vous avez resister l'arrestation que étes envoyer en prison.",
-        image: "",
+        image: "./assets/image/prison1.jpg",
         boutons: [{
             titre: "recommencer",
             destination: " debut"
@@ -151,7 +151,7 @@ let chapters = {
     arrestation2: {
         titre: "La prison",
         text: " La police savait déjà ou vous étier le premier septembre. Elle vous arrête à cause de votre mensonge.",
-        image: "",
+        image: "./assets/image/prison2.jpg",
         boutons: [{
             titre: "recommencer",
             destination: " debut"
@@ -162,7 +162,7 @@ let chapters = {
     arrestation3: {
         titre: "La prison",
         text: " La police procède a l'arrestation, car vous étier la dernière personne à avoir vue votre amoureuse/amoureux.",
-        image: "",
+        image: "./assets/image/prison3.jpg",
         boutons: [{
             titre: "recommencer",
             destination: " debut"
@@ -173,7 +173,7 @@ let chapters = {
     arrestation4: {
         titre: "La prison",
         text: "Vous avez avoué que vous étiez coupable et le juge vous donne la prison à vie.",
-        image: "",
+        image: "./assets/image/prison4.jpg",
         boutons: [{
             titre: "recommencer",
             destination: " debut"

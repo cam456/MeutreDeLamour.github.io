@@ -185,8 +185,6 @@ let chapters = {
 }
 
 
-
-
 function goToChapter(cle) {
     let chapitre = chapters[cle];
     console.log(chapitre.titre)
@@ -196,8 +194,24 @@ function goToChapter(cle) {
 
     document.getElementById('image').src = chapitre.image;
 
+    const boutons = document.querySelector('.boutons');
+
     for(let i = 0; i < chapitre.boutons.length; i++){
         console.log(chapitre.boutons[i].destination)
+
+        const nouveauBtn = document.createElement('button'); 
+  
+        nouveauBtn.textContent = chapitre.boutons[i].titre; 
+      
+        nouveauBtn.addEventListener('click', () => {
+      
+          goToChapter(chapitre.boutons[i].destination) 
+      
+        }); 
+        boutons.appendChild(nouveauBtn); 
+      
+
+        
 
     }
 
@@ -207,5 +221,6 @@ function goToChapter(cle) {
     // dans la boucle, affiche bouton.destination.
 
 }
+
 
 goToChapter('verdicte');

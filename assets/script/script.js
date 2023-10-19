@@ -1,7 +1,7 @@
 let chapters = {
     debut: {
         titre: "la mort",
-        text: " Vous êtes à votre travail au IGA et il y a beaucoup de clients. Vous pensez prendre votre 15 min de pause en avance pour échapper aux clients. ",
+        text:"Vous êtes à votre travail au IGA et il y a beaucoup de clients. Vous pensez prendre votre 15 min de pause en avance pour échapper aux clients. ",
         image: "./assets/image/IGA.jpg",
         boutons: [{
                 titre: "prendre votre pause",
@@ -16,11 +16,11 @@ let chapters = {
     },
     police: {
         titre: "la police",
-        text: "La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
+        text:"La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
         image: "./assets/image/policier.jpg",
         boutons: [{
                 titre: "aller avec la police",
-                destination: "stationPolice"
+                destination:"stationPolice"
             },
             {
                 titre: "ne pas aller avec la police",
@@ -35,11 +35,11 @@ let chapters = {
         image: "./assets/image/stationPolice.jpg",
         boutons: [{
                 titre: " ne pas dire où vous étiez le 21 septembre",
-                destination: "arrestation2"
+                destination:"arrestation2"
             },
             {
                 titre: "dire où vous étiez le 21 septembre",
-                destination:"questionnement"
+                destination:"Questionnement"
             }
         ]
 
@@ -50,7 +50,7 @@ let chapters = {
         image: "./assets/image/interogation.jpg",
         boutons: [{
                 titre: "dire que vous l'avez vue le matin du 21 septembre",
-                destination: "arrestation3"
+                destination:"arrestation3"
             },
             {
                 titre: "dire que vous étiez au travail",
@@ -65,7 +65,7 @@ let chapters = {
         image: "./assets/image/vraiAmour.jpg",
         boutons: [{
                 titre: "ne pas crier et demander un avocat ",
-                destination: "avocat"
+                destination:"avocat"
             },
             {
                 titre: "crier que vous l'aimez et que vous voulez un avocat",
@@ -190,12 +190,14 @@ function goToChapter(cle) {
     console.log(chapitre.titre)
     console.log(chapitre.text)
     document.getElementById('titre').innerHTML = chapitre.titre;
-    console.log(chapitre.image)
+    document.getElementById('text').innerHTML = chapitre.text;
 
     document.getElementById('image').src = chapitre.image;
 
+    console.log(chapitre.image)
+
     const boutons = document.querySelector('.boutons');
-    
+
     boutons.innerHTML = '';
 
     
@@ -226,4 +228,4 @@ function goToChapter(cle) {
 }
 
 
-goToChapter('verdicte');
+goToChapter('debut');

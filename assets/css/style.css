@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-.entrer{
+.Bouton1{
     position: static;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ece1db;
@@ -25,7 +25,7 @@ body {
     
 }
 
-.suite{
+.Bouton2{
     position: static;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ece1db;

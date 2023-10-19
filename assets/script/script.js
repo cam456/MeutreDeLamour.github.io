@@ -195,8 +195,10 @@ function goToChapter(cle) {
     document.getElementById('image').src = chapitre.image;
 
     const boutons = document.querySelector('.boutons');
-
+    
     boutons.innerHTML = '';
+
+    
     for(let i = 0; i < chapitre.boutons.length; i++){
         console.log(chapitre.boutons[i].destination)
 

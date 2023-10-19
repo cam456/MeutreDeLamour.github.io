@@ -24,7 +24,7 @@ let chapters = {
             },
             {
                 titre: "ne pas aller avec la police",
-                destination: "arrestation"
+                destination: "arrestation1"
             }
         ]
 
@@ -34,11 +34,11 @@ let chapters = {
         text: "La police vous ramène dans la voiture pour ensuite aller à la station de police. Rendue là-bas, la police commence à vous questionner. Elles vous demande ou vous étier le 21 septembre",
         image: "./assets/image/stationPolice.jpg",
         boutons: [{
-                titre: " dire ou vous étier le 21 septembre",
-                destination: "arrestation"
+                titre: " ne pas dire ou vous étier le 21 septembre",
+                destination: "arrestation2"
             },
             {
-                titre: "ne pas ment",
+                titre: "dire ou vous étier le 21 septembre",
                 destination: "questionnement"
             }
         ]
@@ -50,7 +50,7 @@ let chapters = {
         image: "./assets/image/interogation.jpg",
         boutons: [{
                 titre: "dire que vous l'avez vue le matin du 21 septembre",
-                destination: "arrestation"
+                destination: "arrestation3"
             },
             {
                 titre: "dire que vous étier au travail",
@@ -94,11 +94,11 @@ let chapters = {
         text: "Votre avocat vous dit qu'elle va faire le plus possible pour que vous soyer prouvé innocent. Durant le procès, le juge vous demande si vous êtes innocent ou coupable. ",
         image: "./assets/image/innocencejpg",
         boutons: [{
-                titre: "innocent",
-                destination: "arrestation"
+                titre: "coupable",
+                destination: "arrestation4"
             },
             {
-                titre: "coupable",
+                titre: "innocent",
                 destination: "VraiAmour"
             }
         ]
@@ -136,7 +136,54 @@ let chapters = {
         }]
 
     },
+
+    arrestation1: {
+        titre: "La prison",
+        text: "Vous avez resister l'arrestation que étes envoyer en prison.",
+        image: "",
+        boutons: [{
+            titre: "recommencer",
+            destination: " debut"
+        }]
+
+    },
+
+    arrestation2: {
+        titre: "La prison",
+        text: " La police savait déjà ou vous étier le premier septembre. Elle vous arrête à cause de votre mensonge.",
+        image: "",
+        boutons: [{
+            titre: "recommencer",
+            destination: " debut"
+        }]
+
+    },
+
+    arrestation3: {
+        titre: "La prison",
+        text: " La police procède a l'arrestation, car vous étier la dernière personne à avoir vue votre amoureuse/amoureux.",
+        image: "",
+        boutons: [{
+            titre: "recommencer",
+            destination: " debut"
+        }]
+
+    },
+
+    arrestation4: {
+        titre: "La prison",
+        text: "Vous avez avoué que vous étiez coupable et le juge vous donne la prison à vie.",
+        image: "",
+        boutons: [{
+            titre: "recommencer",
+            destination: " debut"
+        }]
+
+    },
+
+    
 }
+
 
 
 

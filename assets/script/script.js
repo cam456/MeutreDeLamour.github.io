@@ -190,11 +190,10 @@ function goToChapter(cle) {
     console.log(chapitre.titre)
     console.log(chapitre.text)
     document.getElementById('titre').innerHTML = chapitre.titre;
-    document.getElementById('text').innerHTML = chapitre.text;
-
+    document.getElementById('explication').innerHTML = chapitre.text;
     document.getElementById('image').src = chapitre.image;
+    document.getElementById('boutons').innerHTML = chapitre.boutons;
 
-    console.log(chapitre.image)
 
     const boutons = document.querySelector('.boutons');
 

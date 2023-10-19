@@ -9,7 +9,7 @@ let chapters = {
             },
             {
                 titre: "Ne pas prendre votre pause",
-                destination: "police"
+                destination:"police"
             }
         ]
 
@@ -24,7 +24,7 @@ let chapters = {
             },
             {
                 titre: "ne pas aller avec la police",
-                destination: "arrestation1"
+                destination:"arrestation1"
             }
         ]
 
@@ -39,7 +39,7 @@ let chapters = {
             },
             {
                 titre: "dire où vous étiez le 21 septembre",
-                destination: "questionnement"
+                destination:"questionnement"
             }
         ]
 
@@ -54,7 +54,7 @@ let chapters = {
             },
             {
                 titre: "dire que vous étiez au travail",
-                destination: "VraiAmour"
+                destination:"VraiAmour"
             }
         ]
 
@@ -69,7 +69,7 @@ let chapters = {
             },
             {
                 titre: "crier que vous l'aimez et que vous voulez un avocat",
-                destination: "avocat"
+                destination:"avocat"
             }
         ]
 
@@ -80,11 +80,11 @@ let chapters = {
         image: "./assets/image/avocatjpg",
         boutons: [{
                 titre: "vous avez crier au policier",
-                destination: "innocence"
+                destination:"innocence"
             },
             {
                 titre: "vous n'avez pas crier au policier",
-                destination: "innocence"
+                destination:"innocence"
             }
         ]
 
@@ -99,7 +99,7 @@ let chapters = {
             },
             {
                 titre: "innocent",
-                destination: "VraiAmour"
+                destination:"VraiAmour"
             }
         ]
 
@@ -110,7 +110,7 @@ let chapters = {
         image: "./assets/image/juge.jpg",
         boutons: [{
             titre: "suivent",
-            destination: "verdicte"
+            destination:"verdicte"
         }, ]
 
     },
@@ -121,7 +121,7 @@ let chapters = {
         boutons: [
             {
             titre: "recommencer",
-            destination: " debut"
+            destination:"debut"
         },
     ]
 
@@ -132,7 +132,7 @@ let chapters = {
         image: "./assets/image/mauvais_verdicte.jpg",
         boutons: [{
             titre: "recommencer",
-            destination: " debut"
+            destination:"debut"
         }]
 
     },
@@ -143,7 +143,7 @@ let chapters = {
         image: "./assets/image/prison1.jpg",
         boutons: [{
             titre: "recommencer",
-            destination: " debut"
+            destination:"debut"
         }]
 
     },
@@ -154,7 +154,7 @@ let chapters = {
         image: "./assets/image/prison2.jpg",
         boutons: [{
             titre: "recommencer",
-            destination: " debut"
+            destination:"debut"
         }]
 
     },
@@ -165,7 +165,7 @@ let chapters = {
         image: "./assets/image/prison3.jpg",
         boutons: [{
             titre: "recommencer",
-            destination: " debut"
+            destination:"debut"
         }]
 
     },
@@ -176,7 +176,7 @@ let chapters = {
         image: "./assets/image/prison4.jpg",
         boutons: [{
             titre: "recommencer",
-            destination: " debut"
+            destination:"debut"
         }]
 
     },

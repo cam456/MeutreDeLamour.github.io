@@ -16,7 +16,7 @@ let chapters = {
     },
     police: {
         titre: "la police",
-        text: "La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse et mort. Les policiers vous demandent de venir avec eux pour questionnement.",
+        text: "La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
         image: "./assets/image/policier.jpg",
         boutons: [{
                 titre: "aller avec la police",
@@ -31,14 +31,14 @@ let chapters = {
     },
     stationPolice: {
         titre: "embarquement",
-        text: "La police vous ramène dans la voiture pour ensuite aller à la station de police. Rendue là-bas, la police commence à vous questionner. Elles vous demande ou vous étier le 21 septembre",
+        text: "La police vous ramène dans la voiture pour ensuite aller à la station de police. Rendue là-bas, la police commence à vous questionner. Elles vous demande où vous étiez le 21 septembre",
         image: "./assets/image/stationPolice.jpg",
         boutons: [{
-                titre: " ne pas dire ou vous étier le 21 septembre",
+                titre: " ne pas dire où vous étiez le 21 septembre",
                 destination: "arrestation2"
             },
             {
-                titre: "dire ou vous étier le 21 septembre",
+                titre: "dire où vous étiez le 21 septembre",
                 destination: "questionnement"
             }
         ]
@@ -46,14 +46,14 @@ let chapters = {
     },
     Questionnement: {
         titre: "Questionnement",
-        text: "La police vous demande quand étais la dernière fois que vous avez vue vote amoureux/amoureuse.",
+        text: "La police vous demande quand était la dernière fois que vous avez vue votre amoureux/amoureuse.",
         image: "./assets/image/interogation.jpg",
         boutons: [{
                 titre: "dire que vous l'avez vue le matin du 21 septembre",
                 destination: "arrestation3"
             },
             {
-                titre: "dire que vous étier au travail",
+                titre: "dire que vous étiez au travail",
                 destination: "VraiAmour"
             }
         ]
@@ -64,11 +64,11 @@ let chapters = {
         text: "La police vous demande si vous aimez vraiment votre amoureuse/amoureux.",
         image: "./assets/image/vraiAmour.jpg",
         boutons: [{
-                titre: "ne pas crier et demander un advocat ",
+                titre: "ne pas crier et demander un avocat ",
                 destination: "avocat"
             },
             {
-                titre: "crier que vous l'aimer et que vous voulez un advocat",
+                titre: "crier que vous l'aimez et que vous voulez un avocat",
                 destination: "avocat"
             }
         ]
@@ -76,14 +76,14 @@ let chapters = {
     },
     avocat: {
         titre: "Le sauveur",
-        text: "Après que votre avocat soit arrivé, vous lui dites que n'avez pas tuer votre amoureuse/amoureux. Votre avocat vous demande ce que vous avez dit à la police.",
+        text: "Après que votre avocat soit arrivé, vous lui dites que vous n'avez pas tué votre amoureuse/amoureux. Votre avocat vous demande ce que vous avez dit à la police.",
         image: "./assets/image/avocatjpg",
         boutons: [{
                 titre: "vous avez crier au policier",
                 destination: "innocence"
             },
             {
-                titre: "vous avez pas crier au policier",
+                titre: "vous n'avez pas crier au policier",
                 destination: "innocence"
             }
         ]
@@ -91,7 +91,7 @@ let chapters = {
     },
     innocence: {
         titre: "notre innocence",
-        text: "Votre avocat vous dit qu'elle va faire le plus possible pour que vous soyer prouvé innocent. Durant le procès, le juge vous demande si vous êtes innocent ou coupable. ",
+        text: "Votre avocat vous dit qu'elle va faire le plus possible pour que vous soyez prouvé innocent. Durant le procès, le juge vous demande si vous êtes innocent ou coupable. ",
         image: "./assets/image/innocencejpg",
         boutons: [{
                 titre: "coupable",
@@ -106,7 +106,7 @@ let chapters = {
     },
     juge: {
         titre: "Juge",
-        text: "Après quelques heures, votre avocat est presque capable de vous prouver innocent.",
+        text: "Après quelques heures, votre avocat est presque capable de prouver votre innocence.",
         image: "./assets/image/juge.jpg",
         boutons: [{
             titre: "suivent",
@@ -116,7 +116,7 @@ let chapters = {
     },
     verdicte: {
         titre: "VERDICTE",
-        text: "Lorsque la police a essayé de vous parler vous les avez accompagner sans résistance, cela prouve que vous n'aviez rien à cacher et que vous êtes innocent.",
+        text: "Lorsque la police a essayé de vous parler, vous les avez accompagné sans résistance, cela prouve que vous n'aviez rien à cacher et que vous êtes innocent.",
         image: "./assets/image/verdicte.jpg",
         boutons: [
             {
@@ -128,7 +128,7 @@ let chapters = {
     },
     mauvaisVerdicte: {
         titre: "VERDICTE",
-        text: "Lorsque la police a essayé de vous parler, vous ne les aviez pas accompagnées, car vous êtes aller en pause. Cela prouve au juge que vous cachiez quelque chose et que vous avez tuer votre amoureux/amoureuse.",
+        text: "Lorsque la police a essayé de vous parler, vous ne les aviez pas accompagnées car vous êtes aller en pause. Cela prouve au juge que vous cachiez quelque chose et que vous avez tuer votre amoureux/amoureuse.",
         image: "./assets/image/mauvais_verdicte.jpg",
         boutons: [{
             titre: "recommencer",
@@ -139,7 +139,7 @@ let chapters = {
 
     arrestation1: {
         titre: "La prison",
-        text: "Vous avez resister l'arrestation que étes envoyer en prison.",
+        text: "Vous avez resister l'arrestation et vous êtes envoyé en prison.",
         image: "./assets/image/prison1.jpg",
         boutons: [{
             titre: "recommencer",
@@ -150,7 +150,7 @@ let chapters = {
 
     arrestation2: {
         titre: "La prison",
-        text: " La police savait déjà ou vous étier le premier septembre. Elle vous arrête à cause de votre mensonge.",
+        text: " La police savait déjà où vous étiez le premier septembre. Il vous arrête à cause de votre mensonge.",
         image: "./assets/image/prison2.jpg",
         boutons: [{
             titre: "recommencer",
@@ -161,7 +161,7 @@ let chapters = {
 
     arrestation3: {
         titre: "La prison",
-        text: " La police procède a l'arrestation, car vous étier la dernière personne à avoir vue votre amoureuse/amoureux.",
+        text: " La police procède à l'arrestation car vous étiez la dernière personne à avoir vue votre amoureuse/amoureux.",
         image: "./assets/image/prison3.jpg",
         boutons: [{
             titre: "recommencer",

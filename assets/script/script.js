@@ -206,7 +206,6 @@ let chapters = {
 let twist = false;
 
 
-
 function goToChapter(cle) {
     let chapitre = chapters[cle];
     console.log(chapitre.titre)
@@ -219,6 +218,13 @@ function goToChapter(cle) {
     const boutons = document.getElementById('boutons');
 
     boutons.innerHTML = '';
+
+   
+    if( cle == 'debut'){
+        twist=false;
+    
+    }
+       
 
     if(cle == 'policeBad'){
         twist=true;

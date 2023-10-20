@@ -108,14 +108,14 @@ let chapters = {
     innocence: {
         titre: "notre innocence",
         text: "Votre avocat vous dit qu'elle va faire le plus possible pour que vous soyez prouvé innocent. Durant le procès, le juge vous demande si vous êtes innocent ou coupable. ",
-        image: "./assets/image/innocencejpg",
+        image: "./assets/image/innocence.jpg",
         boutons: [{
                 titre: "coupable",
                 destination: "arrestation4"
             },
             {
                 titre: "innocent",
-                destination:"VraiAmour"
+                destination:"juge"
             }
         ]
 
@@ -220,13 +220,13 @@ function goToChapter(cle) {
 
     boutons.innerHTML = '';
 
-    if(chapter == 'policeBad'){
+    if(cle == 'policeBad'){
         twist=true;
 
 
     }
 
-    if(chapter == 'verdicte' && twist == true){
+    if(cle == 'verdicte' && twist == true){
         goToChapter("mauvaisVerdicte")
 
 

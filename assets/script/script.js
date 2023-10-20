@@ -69,7 +69,7 @@ let chapters = {
                 destination:"arrestation3"
             },
             {
-                titre: "dire que vous étiez au travail",
+                titre: "dire que vous l'avez vue il y a 2 jour",
                 destination:"VraiAmour"
             }
         ]
@@ -125,11 +125,11 @@ let chapters = {
         text: "Après quelques heures, votre avocat est presque capable de prouver votre innocence.",
         image: "./assets/image/juge.jpg",
         boutons: [{
-            titre: "suivent",
+            titre: "suivant",
             destination:"verdicte"
         }, ]
-
     },
+    
     verdicte: {
         titre: "VERDICTE",
         text: "Lorsque la police a essayé de vous parler, vous les avez accompagné sans résistance, cela prouve que vous n'aviez rien à cacher et que vous êtes innocent.",
@@ -138,12 +138,10 @@ let chapters = {
             {
             titre: "recommencer",
             destination:"debut"
-        },
-
-        
-    ]
-
+            
+        },]
     },
+
     mauvaisVerdicte: {
         titre: "VERDICTE",
         text: "Lorsque la police a essayé de vous parler, vous ne les aviez pas accompagnées car vous êtes aller en pause. Cela prouve au juge que vous cachiez quelque chose et que vous avez tuer votre amoureux/amoureuse.",

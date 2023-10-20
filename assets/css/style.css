@@ -12,8 +12,8 @@ body {
     min-height: 100vh;
 }
 
-.Bouton1{
-    position: absolute;
+button{
+    position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ece1db;
     font-size: 20px;
@@ -22,27 +22,21 @@ body {
     border-radius: 4px;
     border: 2px #370B13;
     border-style: solid;
-    margin-top: -580px;
     margin-left: 40px;
+    align-items: end;
+    top: -580px;
+    left: 30px;
+
+
+    
 }
 
-.Bouton2{
-    position: absolute;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ece1db;
-    font-size: 20px;
-    background-color: #773F24;
-    width: 200px;
-    border-radius: 4px;
-    border: 2px #370B13;
-    border-style: solid;
-    margin-top: -580px;
-    margin-left: 350px;
-}
+
 
 .jeu{
     position: relative;
     top: 20px;
+    height: 900px;
     width: 1500px;
     background-color: #DEC7BA;
     overflow: hidden;

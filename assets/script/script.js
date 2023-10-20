@@ -214,7 +214,7 @@ function goToChapter(cle) {
     document.getElementById('titre').innerHTML = chapitre.titre;
     document.getElementById('explication').innerHTML = chapitre.text;
     document.getElementById('image').src = chapitre.image;
-
+    
 
     const boutons = document.getElementById('boutons');
 

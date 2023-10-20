@@ -226,6 +226,12 @@ function goToChapter(cle) {
 
     }
 
+    if(chapter == 'verdicte' && twist == true){
+        goToChapter("mauvaisVerdicte")
+
+
+    }
+
 
     for(let i = 0; i < chapitre.boutons.length; i++){
         console.log(chapitre.boutons[i].destination)
@@ -241,13 +247,11 @@ function goToChapter(cle) {
           
       
         }); 
+
+        
         boutons.appendChild(nouveauBtn); 
 
-        if(chapter == 'verdicte' && twist == true){
-            goToChapter("mauvaisVerdicte")
-
-
-        }
+    
 
              
     }

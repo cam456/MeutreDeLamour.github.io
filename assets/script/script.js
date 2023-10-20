@@ -226,7 +226,7 @@ function goToChapter(cle) {
     }
        
 
-    if(cle == 'policeBad'){
+    if(cle == 'policebad'){
         twist=true;
 
 

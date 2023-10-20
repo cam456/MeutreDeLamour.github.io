@@ -5,7 +5,7 @@ let chapters = {
         image: "./assets/image/IGA.jpg",
         boutons: [{
                 titre: "prendre votre pause",
-                destination: "police"
+                destination: "policebad"
             },
             {
                 titre: "Ne pas prendre votre pause",
@@ -27,8 +27,24 @@ let chapters = {
                 destination:"arrestation1"
             }
         ]
+    },
+
+    policebad: {
+        titre: "la police",
+        text:"La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
+        image: "./assets/image/policier.jpg",
+        boutons: [{
+                    titre: "aller avec la police",
+                    destination:"stationPolice"
+                },
+                {
+                    titre: "ne pas aller avec la police",
+                    destination:"arrestation1"
+                }
+        ]   
 
     },
+
     stationPolice: {
         titre: "embarquement",
         text: "La police vous ramène dans la voiture pour ensuite aller à la station de police. Rendue là-bas, la police commence à vous questionner. Elles vous demande où vous étiez le 21 septembre",
@@ -77,7 +93,7 @@ let chapters = {
     avocat: {
         titre: "Le sauveur",
         text: "Après que votre avocat soit arrivé, vous lui dites que vous n'avez pas tué votre amoureuse/amoureux. Votre avocat vous demande ce que vous avez dit à la police.",
-        image: "./assets/image/avocatjpg",
+        image:"./assets/image/avocat.jpg",
         boutons: [{
                 titre: "vous avez crier au policier",
                 destination:"innocence"
@@ -123,6 +139,8 @@ let chapters = {
             titre: "recommencer",
             destination:"debut"
         },
+
+        
     ]
 
     },
@@ -185,6 +203,10 @@ let chapters = {
 }
 
 
+let twist = false;
+
+
+
 function goToChapter(cle) {
     let chapitre = chapters[cle];
     console.log(chapitre.titre)
@@ -194,11 +216,17 @@ function goToChapter(cle) {
     document.getElementById('image').src = chapitre.image;
 
 
-    const boutons = document.querySelector('.boutons');
+    const boutons = document.getElementById('boutons');
 
     boutons.innerHTML = '';
 
-    
+    if(chapter == 'policeBad'){
+        twist=true;
+
+
+    }
+
+
     for(let i = 0; i < chapitre.boutons.length; i++){
         console.log(chapitre.boutons[i].destination)
 
@@ -209,20 +237,20 @@ function goToChapter(cle) {
         nouveauBtn.addEventListener('click', () => {
       
           goToChapter(chapitre.boutons[i].destination) 
+
+          
       
         }); 
         boutons.appendChild(nouveauBtn); 
-      
 
-        
+        if(chapter == 'verdicte' && twist == true){
+            goToChapter("mauvaisVerdicte")
 
+
+        }
+
+             
     }
-
-
-    // affiche le text
-    // boucle a travers les boutons
-    // dans la boucle, affiche bouton.destination.
-
 }
 
 

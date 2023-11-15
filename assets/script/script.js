@@ -200,6 +200,24 @@ let chapters = {
     
 }
 
+const playPause = document.querySelector('.play-pause');
+const video = document.querySelector('.video');
+const state = document.querySelector('.state');
+
+playPause.addEventListener('click', function() {
+  if (video.paused) {
+    playPause.innerText = '█';
+    video.play();
+  } else {
+    playPause.innerText = '►';
+    video.pause();
+  }
+  
+  state.innerText = video.paused;
+});
+
+
+
 
 let twist = false;
 

@@ -91,5 +91,15 @@ button{
 }
 
     
-
+.flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .element {
+    flex: 0 0 33.333%;
+    width: 20%;
+  }
 

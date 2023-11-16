@@ -214,8 +214,9 @@ function goToChapter(cle) {
     document.getElementById('explication').innerHTML = chapitre.text;
     document.getElementById('image').src = chapitre.image;
 
+
    
-    localStorage.setItem("cle", chapters);
+    localStorage.setItem("cle", cle)
 
 
 

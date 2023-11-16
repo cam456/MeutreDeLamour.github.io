@@ -3,6 +3,7 @@ let chapters = {
         titre: "la mort",
         text:"Vous êtes à votre travail au IGA et il y a beaucoup de clients. Vous pensez prendre votre 15 min de pause en avance pour échapper aux clients. ",
         image: "./assets/image/IGA.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
                 titre: "prendre votre pause",
                 destination: "policebad"
@@ -210,13 +211,15 @@ function goToChapter(cle) {
     let chapitre = chapters[cle];
     console.log(chapitre.titre)
     console.log(chapitre.text)
+    document.getElementById('audio').src = chapitre.audio;
     document.getElementById('titre').innerHTML = chapitre.titre;
     document.getElementById('explication').innerHTML = chapitre.text;
     document.getElementById('image').src = chapitre.image;
-
+    
 
    
     localStorage.setItem("cle", cle)
+   
     
     
 
@@ -282,7 +285,6 @@ reinitialiser.addEventListener("click", function(){
 
 }
 
-console.log(localStorage.getItem("cle"))
 
 goToChapter('debut');
 

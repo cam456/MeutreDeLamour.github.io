@@ -204,18 +204,7 @@ let chapters = {
 let twist = false;
 
 
-let reinitialiser = document.getElementById("reinitialiser");
 
-reinitialiser.addEventListener("click", function(){
-    i = debut;
-    localStorage.setItem("cle", cle)
-
-})
-
-
-
-
-  
 
 function goToChapter(cle) {
     let chapitre = chapters[cle];
@@ -281,6 +270,16 @@ function goToChapter(cle) {
 
              
     }
+
+    
+
+let reinitialiser = document.getElementById("reinitialiser");
+
+
+reinitialiser.addEventListener("click", function(){ 
+    i = 'debut'; localStorage.setItem("cle", cle);
+})
+
 }
 
 console.log(localStorage.getItem("cle"))

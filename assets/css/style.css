@@ -97,8 +97,10 @@ button{
     height: 100%;
     overflow: hidden;
   }
+
   
-  .element {
+  
+.element {
     flex: 0 0 33.333%;
     width: 20%;
   }

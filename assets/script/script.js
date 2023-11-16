@@ -201,7 +201,6 @@ let chapters = {
 }
 
 
-
 let twist = false;
 
 
@@ -263,4 +262,22 @@ function goToChapter(cle) {
 }
 
 
+let btn = document.querySelector(".Bouton3");
+let reset = document.getElementById("reinitialiser");
+
+let i = localStorage.getItem("goToChapter") || 0; 
+
+btn.addEventListener("click", function () {
+    i++;
+    localStorage.setItem('goToChapter', i);
+});
+
+reset.addEventListener("click", function () {
+    i = 0;
+    localStorage.setItem('goToChapter', i);
+});
+
+
 goToChapter('debut');
+
+

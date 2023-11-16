@@ -204,7 +204,18 @@ let chapters = {
 let twist = false;
 
 
+let reinitialiser = document.getElementById("reinitialiser");
 
+reinitialiser.addEventListener("click", function(){
+    i = debut;
+    localStorage.setItem("cle", cle)
+
+})
+
+
+
+
+  
 
 function goToChapter(cle) {
     let chapitre = chapters[cle];
@@ -217,7 +228,8 @@ function goToChapter(cle) {
 
    
     localStorage.setItem("cle", cle)
-
+    
+    
 
 
     const boutons = document.getElementById('boutons');
@@ -243,6 +255,9 @@ function goToChapter(cle) {
 
     }
 
+   
+
+
 
     for(let i = 0; i < chapitre.boutons.length; i++){
         console.log(chapitre.boutons[i].destination)
@@ -262,13 +277,13 @@ function goToChapter(cle) {
         
         boutons.appendChild(nouveauBtn); 
 
-    
+        
 
              
     }
 }
 
-
+console.log(localStorage.getItem("cle"))
 
 goToChapter('debut');
 

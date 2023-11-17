@@ -12,6 +12,10 @@ let chapters = {
             {
                 titre: "Ne pas prendre votre pause",
                 destination:"police"
+            },
+            {
+                titre: "reinitialiser",
+                destination:"debut"
             }
         ]
 
@@ -21,7 +25,7 @@ let chapters = {
         text:"La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
         image: "./assets/image/policier.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
-        video: "./assets/sound/police2.mp4",
+        video: "./assets/video/police2.mp4",
         boutons: [{
                 titre: "aller avec la police",
                 destination:"stationPolice"
@@ -29,6 +33,10 @@ let chapters = {
             {
                 titre: "ne pas aller avec la police",
                 destination:"arrestation1"
+            },
+            {
+                titre: "reinitialiser",
+                destination:"debut"
             }
         ]
     },
@@ -38,7 +46,7 @@ let chapters = {
         text:"La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
         image: "./assets/image/policier.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
-        video: "./assets/sound/police2.mp4",
+        video: "./assets/video/police2.mp4",
         boutons: [{
                     titre: "aller avec la police",
                     destination:"stationPolice"
@@ -46,6 +54,10 @@ let chapters = {
                 {
                     titre: "ne pas aller avec la police",
                     destination:"arrestation1"
+                },
+                {
+                    titre: "reinitialiser",
+                    destination:"debut"
                 }
         ]   
 
@@ -63,6 +75,10 @@ let chapters = {
             {
                 titre: "dire où vous étiez le 21 septembre",
                 destination:"Questionnement"
+            },
+            {
+                titre: "reinitialiser",
+                destination:"debut"
             }
         ]
 
@@ -79,6 +95,10 @@ let chapters = {
             {
                 titre: "dire que vous l'avez vue il y a 2 jour",
                 destination:"VraiAmour"
+            },
+            {
+                titre: "reinitialiser",
+                destination:"debut"
             }
         ]
 
@@ -95,6 +115,10 @@ let chapters = {
             {
                 titre: "crier que vous l'aimez et que vous voulez un avocat",
                 destination:"avocat"
+            },
+            {
+                titre: "reinitialiser",
+                destination:"debut"
             }
         ]
 
@@ -111,6 +135,10 @@ let chapters = {
             {
                 titre: "vous n'avez pas crier au policier",
                 destination:"innocence"
+            },
+            {
+                titre: "reinitialiser",
+                destination:"debut"
             }
         ]
 
@@ -127,6 +155,10 @@ let chapters = {
             {
                 titre: "innocent",
                 destination:"juge"
+            },
+            {
+                titre: "reinitialiser",
+                destination:"debut"
             }
         ]
 
@@ -139,7 +171,13 @@ let chapters = {
         boutons: [{
             titre: "suivant",
             destination:"verdicte"
-        }, ]
+        }, 
+    
+        {
+            titre: "reinitialiser",
+            destination:"debut"
+        }
+]
     },
     
     verdicte: {
@@ -161,7 +199,7 @@ let chapters = {
         image: "./assets/image/mauvais_verdicte.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "recommencer",
+            titre: "reinitialiser",
             destination:"debut"
         }]
 
@@ -173,7 +211,7 @@ let chapters = {
         image: "./assets/image/prison1.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "recommencer",
+            titre: "reinitialiser",
             destination:"debut"
         }]
 
@@ -185,7 +223,7 @@ let chapters = {
         image: "./assets/image/prison2.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "recommencer",
+            titre: "reinitialiser",
             destination:"debut"
         }]
 
@@ -197,7 +235,7 @@ let chapters = {
         image: "./assets/image/prison3.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "recommencer",
+            titre: "reinitialiser",
             destination:"debut"
         }]
 
@@ -209,7 +247,7 @@ let chapters = {
         image: "./assets/image/prison4.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "recommencer",
+            titre: "reinitialiser",
             destination:"debut"
         }]
 
@@ -245,15 +283,6 @@ function goToChapter(cle) {
     
 
     
-    
-    
-
-  
-   
-    
-    
-
-
     const boutons = document.getElementById('boutons');
 
     boutons.innerHTML = '';
@@ -310,7 +339,7 @@ function goToChapter(cle) {
     const video = document.createElement("video");
     const image = document.createElement("img");
   
-    if (chapters[chapter].video) {
+    if (cle[chapitre].video) {
       media.innerHTML = ''
       hasVideo = true;
       video.src = chapitre.video; 
@@ -321,7 +350,7 @@ function goToChapter(cle) {
     } else {
       media.innerHTML = ''
       hasVideo = false;
-      image.src = chapters[chapter].image;
+      image.src = cle[chapitre].image;
       media.appendChild(image)
     }
 

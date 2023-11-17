@@ -14,7 +14,7 @@ let chapters = {
                 destination:"police"
             },
             {
-                titre: "reinitialiser",
+                titre: "recommencer",
                 destination:"debut"
             }
         ]
@@ -35,7 +35,7 @@ let chapters = {
                 destination:"arrestation1"
             },
             {
-                titre: "reinitialiser",
+                titre: "recommencer",
                 destination:"debut"
             }
         ]
@@ -56,7 +56,7 @@ let chapters = {
                     destination:"arrestation1"
                 },
                 {
-                    titre: "reinitialiser",
+                    titre: "recommencer",
                     destination:"debut"
                 }
         ]   
@@ -77,7 +77,7 @@ let chapters = {
                 destination:"Questionnement"
             },
             {
-                titre: "reinitialiser",
+                titre: "recommencer",
                 destination:"debut"
             }
         ]
@@ -97,7 +97,7 @@ let chapters = {
                 destination:"VraiAmour"
             },
             {
-                titre: "reinitialiser",
+                titre: "recommencer",
                 destination:"debut"
             }
         ]
@@ -117,7 +117,7 @@ let chapters = {
                 destination:"avocat"
             },
             {
-                titre: "reinitialiser",
+                titre: "recommencer",
                 destination:"debut"
             }
         ]
@@ -137,7 +137,7 @@ let chapters = {
                 destination:"innocence"
             },
             {
-                titre: "reinitialiser",
+                titre: "recommencer",
                 destination:"debut"
             }
         ]
@@ -157,7 +157,7 @@ let chapters = {
                 destination:"juge"
             },
             {
-                titre: "reinitialiser",
+                titre: "recommencer",
                 destination:"debut"
             }
         ]
@@ -174,7 +174,7 @@ let chapters = {
         }, 
     
         {
-            titre: "reinitialiser",
+            titre: "recommencer",
             destination:"debut"
         }
 ]
@@ -199,7 +199,7 @@ let chapters = {
         image: "./assets/image/mauvais_verdicte.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "reinitialiser",
+            titre: "recommencer",
             destination:"debut"
         }]
 
@@ -211,7 +211,7 @@ let chapters = {
         image: "./assets/image/prison1.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "reinitialiser",
+            titre: "recommencer",
             destination:"debut"
         }]
 
@@ -223,7 +223,7 @@ let chapters = {
         image: "./assets/image/prison2.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "reinitialiser",
+            titre: "recommencer",
             destination:"debut"
         }]
 
@@ -235,7 +235,7 @@ let chapters = {
         image: "./assets/image/prison3.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "reinitialiser",
+            titre: "recommencer",
             destination:"debut"
         }]
 
@@ -247,7 +247,7 @@ let chapters = {
         image: "./assets/image/prison4.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
-            titre: "reinitialiser",
+            titre: "recommencer",
             destination:"debut"
         }]
 
@@ -355,13 +355,30 @@ function goToChapter(cle) {
     }
 
 
-
-   let mycle_sterialized = JSON.stringify(cle);
-   localStorage.setItem("cle", mycle_sterialized);
-
-   console.log(localStorage);
+    const reinitialiser = document.querySelector('.recommencer');
+    reinitialiser.addEventListener('click', function () {
+        localStorage.clear();
+        goToChapter('debut');
+    });
+    
+    
+    if (localStorage.getItem('chapter') === null) {
+        goToChapter('debut');
+    } else {
+        goToChapter(localStorage.getItem('chapter'));
+    }
    
+    let finalChapter = localStorage.getItem('verdicte');
 
+    
+    if (finalChapter === 'mauvaisVerdicte') {
+        chapters['debut'].boutons[0].destination = 'policebad';
+    }
+    
+    if (finalChapter === 'verdicte') {
+        chapters['debut'].boutons[0].destination = 'police';
+    }
+   
     
 
 

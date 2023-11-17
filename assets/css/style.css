@@ -82,6 +82,12 @@ button{
     text-align: center
     
 }
+.media{
+    position: relative;
+    top: -510px;
+    left: 750px ;
+    z-index: inherit;
+}
 
 .image{
     position: relative;

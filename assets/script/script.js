@@ -4,6 +4,7 @@ let chapters = {
         text:"Vous êtes à votre travail au IGA et il y a beaucoup de clients. Vous pensez prendre votre 15 min de pause en avance pour échapper aux clients. ",
         image: "./assets/image/IGA.jpg",
         audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
+
         boutons: [{
                 titre: "prendre votre pause",
                 destination: "policebad"
@@ -19,6 +20,8 @@ let chapters = {
         titre: "la police",
         text:"La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
         image: "./assets/image/policier.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
+        video: "./assets/sound/police2.mp4",
         boutons: [{
                 titre: "aller avec la police",
                 destination:"stationPolice"
@@ -34,6 +37,8 @@ let chapters = {
         titre: "la police",
         text:"La police est arrivée à votre travail et vous découvrez que votre amoureux/amoureuse est mort. Les policiers vous demandent de venir avec eux pour questionnement.",
         image: "./assets/image/policier.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
+        video: "./assets/sound/police2.mp4",
         boutons: [{
                     titre: "aller avec la police",
                     destination:"stationPolice"
@@ -50,6 +55,7 @@ let chapters = {
         titre: "embarquement",
         text: "La police vous ramène dans la voiture pour ensuite aller à la station de police. Rendue là-bas, la police commence à vous questionner. Elles vous demande où vous étiez le 21 septembre",
         image: "./assets/image/stationPolice.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
                 titre: " ne pas dire où vous étiez le 21 septembre",
                 destination:"arrestation2"
@@ -65,6 +71,7 @@ let chapters = {
         titre: "Questionnement",
         text: "La police vous demande quand était la dernière fois que vous avez vue votre amoureux/amoureuse.",
         image: "./assets/image/interogation.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
                 titre: "dire que vous l'avez vue le matin du 21 septembre",
                 destination:"arrestation3"
@@ -80,6 +87,7 @@ let chapters = {
         titre: "Le vrai amour",
         text: "La police vous demande si vous aimez vraiment votre amoureuse/amoureux.",
         image: "./assets/image/vraiAmour.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
                 titre: "ne pas crier et demander un avocat ",
                 destination:"avocat"
@@ -95,6 +103,7 @@ let chapters = {
         titre: "Le sauveur",
         text: "Après que votre avocat soit arrivé, vous lui dites que vous n'avez pas tué votre amoureuse/amoureux. Votre avocat vous demande ce que vous avez dit à la police.",
         image:"./assets/image/avocat.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
                 titre: "vous avez crier au policier",
                 destination:"innocence"
@@ -110,6 +119,7 @@ let chapters = {
         titre: "notre innocence",
         text: "Votre avocat vous dit qu'elle va faire le plus possible pour que vous soyez prouvé innocent. Durant le procès, le juge vous demande si vous êtes innocent ou coupable. ",
         image: "./assets/image/innocence.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
                 titre: "coupable",
                 destination: "arrestation4"
@@ -125,6 +135,7 @@ let chapters = {
         titre: "Juge",
         text: "Après quelques heures, votre avocat est presque capable de prouver votre innocence.",
         image: "./assets/image/juge.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
             titre: "suivant",
             destination:"verdicte"
@@ -135,6 +146,7 @@ let chapters = {
         titre: "VERDICTE",
         text: "Lorsque la police a essayé de vous parler, vous les avez accompagné sans résistance, cela prouve que vous n'aviez rien à cacher et que vous êtes innocent.",
         image: "./assets/image/verdicte.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [
             {
             titre: "recommencer",
@@ -147,6 +159,7 @@ let chapters = {
         titre: "VERDICTE",
         text: "Lorsque la police a essayé de vous parler, vous ne les aviez pas accompagnées car vous êtes aller en pause. Cela prouve au juge que vous cachiez quelque chose et que vous avez tuer votre amoureux/amoureuse.",
         image: "./assets/image/mauvais_verdicte.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
             titre: "recommencer",
             destination:"debut"
@@ -158,6 +171,7 @@ let chapters = {
         titre: "La prison",
         text: "Vous avez resister l'arrestation et vous êtes envoyé en prison.",
         image: "./assets/image/prison1.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
             titre: "recommencer",
             destination:"debut"
@@ -169,6 +183,7 @@ let chapters = {
         titre: "La prison",
         text: " La police savait déjà où vous étiez le premier septembre. Il vous arrête à cause de votre mensonge.",
         image: "./assets/image/prison2.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
             titre: "recommencer",
             destination:"debut"
@@ -180,6 +195,7 @@ let chapters = {
         titre: "La prison",
         text: " La police procède à l'arrestation car vous étiez la dernière personne à avoir vue votre amoureuse/amoureux.",
         image: "./assets/image/prison3.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
             titre: "recommencer",
             destination:"debut"
@@ -191,6 +207,7 @@ let chapters = {
         titre: "La prison",
         text: "Vous avez avoué que vous étiez coupable et le juge vous donne la prison à vie.",
         image: "./assets/image/prison4.jpg",
+        audio: "./assets/sound/Squeaky_Anime_Sound.mp3" ,
         boutons: [{
             titre: "recommencer",
             destination:"debut"
@@ -204,21 +221,34 @@ let chapters = {
 
 let twist = false;
 
+function playSound(squeky){
+    let audio = new Audio(squeky);
+    audio.loop = false
+    audio.play();
+
+}
+
+document.getElementById("boutons").onclick = function(){
+    playSound("./assets/sound/Squeaky_Anime_Sound.mp3")
+}
+
 
 
 
 function goToChapter(cle) {
     let chapitre = chapters[cle];
-    console.log(chapitre.titre)
-    console.log(chapitre.text)
-    document.getElementById('audio').src = chapitre.audio;
+    console.log(chapitre.titre);
+    console.log(chapitre.text);
     document.getElementById('titre').innerHTML = chapitre.titre;
     document.getElementById('explication').innerHTML = chapitre.text;
     document.getElementById('image').src = chapitre.image;
     
 
-   
-    localStorage.setItem("cle", cle)
+    
+    
+    
+
+  
    
     
     
@@ -247,6 +277,8 @@ function goToChapter(cle) {
 
     }
 
+
+
    
 
 
@@ -274,14 +306,35 @@ function goToChapter(cle) {
              
     }
 
+    const media = document.querySelector(".media");
+    const video = document.createElement("video");
+    const image = document.createElement("img");
+  
+    if (chapters[chapter].video) {
+      media.innerHTML = ''
+      hasVideo = true;
+      video.src = chapitre.video; 
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      media.appendChild(video);
+    } else {
+      media.innerHTML = ''
+      hasVideo = false;
+      image.src = chapters[chapter].image;
+      media.appendChild(image)
+    }
+
+
+
+   let mycle_sterialized = JSON.stringify(cle);
+   localStorage.setItem("cle", mycle_sterialized);
+
+   console.log(localStorage);
+   
+
     
 
-let reinitialiser = document.getElementById("reinitialiser");
-
-
-reinitialiser.addEventListener("click", function(){ 
-    i = 'debut'; localStorage.setItem("cle", cle);
-})
 
 }
 

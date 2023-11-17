@@ -337,7 +337,7 @@ function goToChapter(cle) {
 
     const media = document.querySelector(".media");
     const video = document.createElement("video");
-    const image = document.createElement("img");
+    const image = document.createElement("image");
   
     if (cle[chapitre].video) {
       media.innerHTML = ''

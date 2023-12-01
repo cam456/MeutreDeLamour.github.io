@@ -12,13 +12,16 @@ body {
     min-height: 100vh;
 }
 
-button{
+
+#boutons {
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
 
+}
 
+button{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ece1db;
     font-size: 20px;
@@ -26,8 +29,6 @@ button{
     border-radius: 4px;
     border: 2px #370B13;
     border-style: solid;
-    align-items: end;
-   
 }
 
 
@@ -102,4 +103,15 @@ button{
     width: 20%;
   }
 
-@media screen and (min-width: )
+@media screen and (min-width: 800px ) { 
+    #content{
+        max-width: 100%;
+        height:auto;
+        display: flex;
+        flex-direction:row;
+        align-items: flex-end;
+        justify-content: end;
+    
+    }
+
+}

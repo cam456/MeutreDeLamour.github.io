@@ -51,9 +51,6 @@ button{
     background-color:#77402491 ;
     text-align: center;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .titre{
@@ -111,7 +108,23 @@ button{
         flex-direction:row;
         align-items: flex-end;
         justify-content: end;
+        margin: 5% 0.2%;
     
     }
 
+    #explication{
+        display: flex;
+        flex-direction:row;
+        align-items: flex-start;
+        justify-content: start;
+        margin: 10% 10%;
+    }
+
+    .jeu{
+        margin: 10% 5%;
+    }
+
+    .image{
+        flex-basis: 100%;
+    }
 }

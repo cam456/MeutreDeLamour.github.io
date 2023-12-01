@@ -328,8 +328,10 @@ function goToChapter(cle) {
     media.appendChild(video);
   } else {
     const image = document.createElement("img");
+    image.classList.add('image');
     image.src = chapitre.image;
     media.appendChild(image);
+  
   }
 
 localStorage.setItem('cle', cle)

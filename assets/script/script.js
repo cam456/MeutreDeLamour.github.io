@@ -361,3 +361,10 @@ if (localStorage.getItem("cle") !== null) {
     goToChapter('debut');
   }
 
+  const input = document.querySelector('.input');
+  const btn = document.querySelector('.btn');
+  const output = document.querySelector('.output');
+  
+  btn.addEventListener('click', function() {
+    output.innerText = input.checked;
+  })

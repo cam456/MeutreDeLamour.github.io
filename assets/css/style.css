@@ -31,8 +31,6 @@ button{
     border-style: solid;
 }
 
-
-
 .jeu{
     background-color: #DEC7BA;
     border-radius: 10px;
@@ -73,6 +71,7 @@ button{
 
 }
 */
+
 img{
     max-width: 100%;
     height: auto;
@@ -86,14 +85,17 @@ img{
     justify-content: center;
     flex: 0 0 50%;
 }
-
-
-  
   
 .element {
     flex: 0 0 33.333%;
     width: 20%;
-    }
+}
+
+#mute{
+    display: flex;
+    margin-top: 20%;
+
+}
 
 @media screen and (min-width: 800px ) { 
     #content{

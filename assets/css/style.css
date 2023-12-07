@@ -63,7 +63,8 @@ button{
 .chapitre{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 35px;
-    text-align: center
+    text-align: center;
+
     
 }
 
@@ -75,6 +76,7 @@ button{
 img{
     max-width: 100%;
     height: auto;
+    text-align: center;
 }
 
 .image{
@@ -83,24 +85,15 @@ img{
     align-items: center;
     justify-content: center;
     flex: 0 0 50%;
-
 }
 
-    
-/*.flex {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-  }
-  */
 
   
   
 .element {
     flex: 0 0 33.333%;
     width: 20%;
-  }
+    }
 
 @media screen and (min-width: 800px ) { 
     #content{
@@ -120,12 +113,12 @@ img{
         align-items: flex-start;
         justify-content: start;
         margin: 10% 10%;
+        max-width: 30%;
     }
 
     .jeu{
         margin: 10% 5%;
     }
-
 
 
 

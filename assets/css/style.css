@@ -93,8 +93,7 @@ img{
 
 #mute{
     display: flex;
-    margin-top: 20%;
-
+    margin-top: 2%;
 }
 
 @media screen and (min-width: 800px ) { 

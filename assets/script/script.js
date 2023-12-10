@@ -269,6 +269,10 @@ function playSound(squeky) {
   let audio = new Audio(squeky);
   audio.loop = false;
   audio.play();
+
+  if (btn == true){
+    twist = false;
+  }
 }
 
 document.getElementById("boutons").onclick = function () {
@@ -315,7 +319,7 @@ function goToChapter(cle) {
 
   const media = document.querySelector(".media");
   
-  
+ 
 
 
   media.innerHTML = "";
@@ -333,6 +337,8 @@ function goToChapter(cle) {
     media.appendChild(image);
   
   }
+
+
 
 localStorage.setItem('cle', cle)
 
@@ -361,9 +367,9 @@ if (localStorage.getItem("cle") !== null) {
     goToChapter('debut');
   }
 
-  const input = document.querySelector('.input');
-  const btn = document.querySelector('.btn');
-  const output = document.querySelector('.output');
+const input = document.querySelector('.input');
+const btn = document.querySelector('.btn');
+const output = document.querySelector('.output');
   
   btn.addEventListener('click', function() {
     output.innerText = input.checked;

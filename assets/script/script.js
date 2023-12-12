@@ -270,9 +270,6 @@ function playSound(squeky) {
   audio.loop = false;
   audio.play();
 
-  if (btn == true){
-    twist = false;
-  }
 }
 
 document.getElementById("boutons").onclick = function () {
@@ -373,4 +370,6 @@ const output = document.querySelector('.output');
   
   btn.addEventListener('click', function() {
     output.innerText = input.checked;
+    input.checked = true;
   })
+

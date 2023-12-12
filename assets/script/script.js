@@ -265,16 +265,35 @@ let chapters = {
 
 let twist = false;
 
+
 function playSound(squeky) {
   let audio = new Audio(squeky);
   audio.loop = false;
   audio.play();
+ }
 
-}
-
-document.getElementById("boutons").onclick = function () {
+ document.getElementById("boutons").onclick = function () {
   playSound("./assets/sound/Squeaky_Anime_Sound.mp3");
-};
+  disableSound();
+ };
+
+ function disableSound() {
+  const input = document.querySelector('.input');
+  if (input.checked === true) {
+     playSound = function () { };
+  }
+ }
+
+
+const input = document.querySelector('.input');
+const btn = document.querySelector('.btn');
+const output = document.querySelector('.output');
+  
+btn.addEventListener('click', function () {
+  output.innerText = true;
+  disableSound();
+ });
+
 
 function goToChapter(cle) {
   let chapitre = chapters[cle];
@@ -364,12 +383,4 @@ if (localStorage.getItem("cle") !== null) {
     goToChapter('debut');
   }
 
-const input = document.querySelector('.input');
-const btn = document.querySelector('.btn');
-const output = document.querySelector('.output');
-  
-  btn.addEventListener('click', function() {
-    output.innerText = input.checked;
-    input.checked = true;
-  })
 

@@ -280,7 +280,13 @@ function playSound(squeky) {
  function disableSound() {
   const input = document.querySelector('.input');
   if (input.checked === true) {
-     playSound = function () { };
+     playSound = function () {};
+  }else{
+    playSound = function (squeky){
+      let audio = new Audio(squeky);
+      audio.loop = false;
+      audio.play();
+    };
   }
  }
 
@@ -301,7 +307,7 @@ function goToChapter(cle) {
   console.log(chapitre.text);
   document.getElementById("titre").innerHTML = chapitre.titre;
   document.getElementById("explication").innerHTML = chapitre.text;
- // document.getElementById("image").src = chapitre.image;//
+
 
   const boutons = document.getElementById("boutons");
 
@@ -357,6 +363,9 @@ function goToChapter(cle) {
 
 
 localStorage.setItem('cle', cle)
+localStorage.setItem('output.innerText',)
+
+
 
   const reinitialiser = document.querySelector(".recommencer");
   reinitialiser.addEventListener("click", function () {

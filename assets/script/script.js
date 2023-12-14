@@ -363,7 +363,7 @@ function goToChapter(cle) {
 
 
 localStorage.setItem('cle', cle)
-localStorage.setItem('output.innerText',)
+localStorage.setItem('output.innerText', output.inner)
 
 
 
@@ -393,3 +393,8 @@ if (localStorage.getItem("cle") !== null) {
   }
 
 
+if(localStorage.getItem("output.inner") !==true){
+  
+
+  
+}

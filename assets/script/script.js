@@ -394,7 +394,6 @@ if (localStorage.getItem("cle") !== null) {
 
 
 if(localStorage.getItem("output.inner") !==true){
-  
-
-  
-}
+  output.inner(localStorage.getItem("output.inner"));
+} else {
+} 
